@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+
+    height: 50px;
+    right: 1rem;
+    top: 1rem;
+    position: fixed;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    padding: 0 16px;
+    list-style: none;
+    background-color: rgb(107, 122, 251);
+    border-radius: 20px;
+    margin: 0 5px;
+}
+#navbar ul li:hover{
+    box-shadow: 2px 2px 6px white;
+    background-color: rgba(107, 121, 251, 0.614);
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+
+
+/* navbar=------------------------ */
+#home {
+    font-family: system-ui, sans-serif;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(107, 107, 245), rgb(48, 48, 251), rgb(53, 67, 253));
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 6em;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+#home h2 {
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
+    color: white;
+}
+
+#home div img {
+    margin: 1rem auto;
+    width: 300px;
+    border-radius: 20px 50px;
+    box-shadow: 3px 3px 30px rgb(255, 213, 213), 3px 3px 30px rgb(167, 108, 255);
+    transition: all 0.5s;
+}
+
+#home div img:hover {
+    cursor: pointer;
+    object-fit: cover;
+    transform: translateY(10px);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.downbtn {
+    background-color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 26px;
+    transition: all .5s;
+    margin: 20px auto;
+}
+
+.downbtn:hover {
+    color: white;
+    box-shadow: inset 190px 0 0 0 rgb(91, 179, 243);
+}
+
+.downbtn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.downbtn a:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+
+/* <!-- --------------------------------------------contact start-------------------------------------------- --> */
+
+#contact {
+    background: linear-gradient(45deg, rgb(107, 107, 245), rgb(48, 48, 251), rgb(116, 162, 223));
+    text-align: center;
+}
+
+#contact h1 {
+    font-weight: 400;
+    color: white;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1em;
+}
+
+#contact h2 {
+    margin: 1rem auto;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#contact h3 {
+    margin: 1rem auto;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#contact h4 {
+    margin: 1rem auto;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#contact div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-envelope,
+.fa-linkedin,
+.fa-github {
+    margin: 10px;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.036);
+    padding: 10px 20px;
+    box-shadow: 2px 2px 10px white;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* <!-- --------------------------------------------contact ends-------------------------------------------- --> */
