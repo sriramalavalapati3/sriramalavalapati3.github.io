@@ -2,154 +2,277 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
 </head>
 
 <body>
-    <nav id="nav-menu">
-        <ul>
-            <li><a class="nav-link home" href="#home">HOME</a></li>
-            <li><a class="nav-link about" href="#about">ABOUT</a></li>
-            <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-            <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#Resume">Resume</a></li>
-        </ul>
-    </nav>
+
+    <div class="nav">
 
 
+        <div id="nav-menu">
+            <nav>
+                <a class="logo" href="#">M<span>K</span></a>
+                <ul id="sidemenu">
+                    <li><a class="nav-link home" href="#home">HOME</a></li>
+                    <li><a class="nav-link about" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+                    <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+                    <li id="resume-button-1"> 
+                        <a class="nav-link resume" id="resume-link-1" href='Manoj_Kumar_Resume.pdf' download="Manoj-Resume">RESUME</a>
+                    </li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
 
+
+            </nav>
+
+        </div>
+    </div>
     <!-------------------- HOME ---------------------->
     <section id="home">
-        <img src="./images/Profile.png" class="home-img" alt="#" />
-        <h1 id="user-detail-name">Sriram Alavalapati</h1>
-        <h2 id="user-detail-intro">Full Stack Web Developer </h2>
+        <div class="max-width">
+            <div class="home-content">
+                
+                <div id="one">
+                    <div class="text-1">Hi, My Name is</div>
+                    <div id="user-detail-name" class="text-2">Sriram</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                    <button  id="resume-button-2"><a id="resume-link-2" href='./images/Alavalapati_Deva_SriRam_Resume.pdf' download="Manoj-Resume">RESUME</a></button>
+                </div>
+                   <div >
+                    <img class="home-img" src="images/Profile.png" alt="">
+                   </div>
+            </div>
+        </div>
     </section>
-
-
-
     <!-------------------- ABOUT ---------------------->
-    <section title="About" id="about" class="about section">
-        <title>About</title>
-        <h1 id="user-detail-name">Sriram Alavalapati</h1>
-        <h2 id="user-detail-intro">Full Stack Web Developer With Good Grasp Of  HTML, CSS, JAVASCRIPT,Node.js,MongoDB,SQL,Express.js,Redis,System Design,Expertise in create API's
-            POSTMAN</h2>
+    <section id="about" class="about section">
+        <h1>About Me</h1>
+        <div class="about-section">
+          
+            <div class="right">
+                <p id="user-detail-intro">A passionate Nodejs Back-End Developer, Dedicated  to developing robustic Back-End
+                     with the help of Javascript, Express and Nodejs that interact. And expertise in website architecture, design, web design, and web API
+                    designs.Having a problem solving skills and having always space to learn new technologies. 
+                    <!-- I'm also an enthusiastic learner who's constantly working to learn new things and improve
+                    my skills to be the best version of myself. -->
+                </p>
+
+            </div>
+        </div>
     </section>
-
-
-
     <!-------------------- SKILLS ---------------------->
     <section id="skills">
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
-                alt="nodejs.png" />
-            <h5 class="skills-card-name">Node JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fexpressjs-tutorial%2F&psig=AOvVaw1Nvd5UopILGcTiRz6_iGyI&ust=1675883715544000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjs-LyPhP0CFQAAAAAdAAAAABAE"
-                alt="express.png" />
-            <h5 class="skills-card-name">Express JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
-                alt="mongodb.png" />
-            <h5 class="skills-card-name">Mongo DB</h5>
+        <h1>Skills</h1>
+        <div class="skill">
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/nodejs.png" alt="nodejs.png" />
+                <h5 class="skills-card-name">Node JS</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/ee.png" alt="express.png" />
+                <h5 class="skills-card-name">Express JS</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">Mongo DB</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/jsss.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">JavaScript</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/vscode.jpg" alt="mongodb.png" />
+                <h5 class="skills-card-name">Vs Code</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/aws.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">Aws</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/github.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">Github</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/html2.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">HTML</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/css2.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">CSS</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/socket io2.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">WebSocket</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">DSA</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">SQL</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">Basics of System Design</h5>
+            </div>
         </div>
     </section>
-
-
-
     <!-------------------- PROJECTS ---------------------->
-    <section id="projects">Projects
-        
-        <div class="project-card">
-            <img src="./image/myntra.png" alt="">
-            <title class="project-title">Myntra</title>
-            <p class="project-description">Clone of 
-                </p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://lively-blini-b17740.netlify.app/"></a></p>
+
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+
+            <div class="project-card">
+                <img src="" alt="">
+                <h1 class="project-title"></h1>
+                <p class="project-description"></p>
+                <p class="project-tech-stack"></p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span> <a href="" target="_blank"> Git Repo
+                            </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h1 class="project-title"></h1>
+                <p class="project-description"></p>
+                <p class="project-tech-stack"></p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span> <a href="" target="_blank"> Git
+                                Repo </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="" target="_blank">Live Site
+                            </a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h1 class="project-title"></h1>
+                <p class="project-description"></p>
+                <p class="project-tech-stack"></p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span> <a href="" target="_blank"> Git Repo
+                            </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h1 class="project-title"></h1>
+                <p class="project-description"></p>
+                <p class="project-tech-stack"></p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span> <a href="" target="_blank"> Git Repo
+                            </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="project-card">
-          <img src="./image/myntra.png" alt="">
-          <title class="project-title">Myntra</title>
-          <p class="project-description">Clone of 
-              </p>
-          <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-          <p class="project-github-link">Github link <a
-                  href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-          <p class="project-deployed-link"> Deployed link<a
-                  href="https://lively-blini-b17740.netlify.app/"></a></p>
-      </div>
-      
 
-      <div class="project-card">
-        <img src="./image/myntra.png" alt="">
-        <title class="project-title">STEAK HOUSE</title>
-        <p class="project-description">Clone of KFC
-            </p>
-        <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-        <p class="project-github-link">Github link <a
-                href="https://github.com/sriramalavalapati3/painstaking-coach-4141"></a></p>
-        <p class="project-deployed-link"> Deployed link<a
-                href="https://lucky-melba-e32a66.netlify.app/"></a></p>
-    </div>
-
-
-    <div class="project-card">
-      <img src="./image/myntra.png" alt="">
-      <title class="project-title"></title>
-      <p class="project-description">Clone of 
-         OVER STOCK </p>
-      <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-      <p class="project-github-link">Github link <a
-              href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-      <p class="project-deployed-link"> Deployed link<a
-              href="https://lively-blini-b17740.netlify.app/"></a></p>
-  </div>
     </section>
-
 
 
     <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-        <h1>Contact</h1>
-        <a id="contact-github" href="https://github.com/sriramalavalapati3">GitHub</a>
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/sriram-alavalapati-a78489245/">LinkedIn</a>
-        <a id="contact-phone" href="#">7032949088</a>
-        <a id="contact-email" href="sriramalavalapatiit01@gmail.com">Email</a>
-    </section>
-
-
-
+   
     <!-------------------- RESUME ---------------------->
-    <section id="resume">
-        <button id="resume-button-1"  src=""><a href="./images/Alavalapati_Deva_SriRam_Resume.pdf" download="Sriram_Alavalapati_Resume"></a> Resume 1</button>
-        <button id="resume-button-2"  src=""><a href="./images/Alavalapati_Deva_SriRam_Resume.pdf" download="Sriram_Alavalapati_Resume"></a> Resume 2</button>
-    </section>
-
-
+    <!-- <section id="resume">
+        <a id="resume-link-1" href='Manoj_Kumar_Resume.pdf' download="Manoj-Resume">RESUME</a>
+    </section> -->
     <!-------------------- GitHUB ---------------------->
     <section class="react-activity-calendar">
         <h1>GitHub React-Activity-Calendar</h1>
-        <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=sriramalavalapati3&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-            alt="streakstat" />
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sriramalavalapati3"
-            alt="top_languages" />
-        <img id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=sriramalavalapati3&count_private=true" alt="stat-card" />
+        <!-- <div class="calendar react-activity-calendar"></div> -->
+        <div class="github">
+          
+            <div>
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=sriramalavalapati3&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                    alt="streakstat" />
+            </div>
+            <div>
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=sriramalavalapati3&theme=outrun"
+                    alt="top_languages" />
+            </div>
+            <div>
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=sriramalavalapati3&count_private=true"
+                    alt="stat-card" />
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-first">
+            <div>
+                <a href="https://github.com/sriramalavalapati3"><i class="fa-brands fa-github"></i></a>
+                <a id="contact-github" href="https://github.com/sriramalavalapati3"></i>GitHub</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/sriram-alavalapati-a78489245/"><i class="fa-brands fa-linkedin"></i></a>
+                <a id="contact-linkedin" href="https://www.linkedin.com/in/sriram-alavalapati-a78489245/">LinkedIn</a>
+            </div>
+            <div>
+               
+                <a id="contact-phone" href="#">📞 7032949088</a>
+            </div>
+            <div>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a id="contact-email" href="sriramalavalapatiit01@gmail.com">Email</a>
+            </div>
+        </div>
+
     </section>
 </body>
+<!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
+<!-- <script>
 
+    GitHubCalendar(".calendar", "manoj7654", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "manoj7654", {
+        proxy(username) {
+            return fetch(`https://your-proxy.com/github?user=${username}`)
+        }
+    })
+</script> -->
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+     
+
+
+
+<script src="index.js"></script>
