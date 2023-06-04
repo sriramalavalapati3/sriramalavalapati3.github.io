@@ -163,7 +163,7 @@ body {
   overflow: hidden; /* This ensures the image stays within the circular border */
 }
 
-.image-container proimg {
+.image-container .proimg {
   width: 100%; /* Make the image fill the container */
   height: 100%;
   object-fit: cover; /* Preserve the image's aspect ratio and fill the container */
