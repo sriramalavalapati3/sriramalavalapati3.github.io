@@ -675,3 +675,27 @@ h1{
     height: 1px;
     width: 1px;
   }
+
+/* footer section styling */
+footer{
+  background: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white ;
+  text-align: center;
+  margin-top: 80px;
+}
+  hr{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+  } 
+  footer>p{
+    margin-bottom: 10px;
+  }               
+footer>a{
+  color: white;
+  font-size: x-large;
+  margin-right: 15px;
+}
