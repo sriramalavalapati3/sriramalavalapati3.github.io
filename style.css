@@ -155,15 +155,20 @@ body {
     margin-top: 180px;
 }
 
+
 .home-img {
-    width: 80%;
-    border-radius: 10%;
+  width: 200px; /* Adjust the width and height according to your needs */
+  height: 200px;
+  border-radius: 50%; /* This makes the border circular */
+  overflow: hidden; /* This ensures the image stays within the circular border */
 }
 
 .home-img img {
-    object-fit: fill;
-    
+  width: 100%; /* Make the image fill the container */
+  height: 100%;
+  object-fit: cover; /* Preserve the image's aspect ratio and fill the container */
 }
+
 
 /* ................................About Section............................. */
 .about-section {
