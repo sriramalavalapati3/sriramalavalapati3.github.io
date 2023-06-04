@@ -157,8 +157,8 @@ body {
 
 
 .image-container {
-  width: 200px; /* Adjust the width and height according to your needs */
-  height: 200px;
+  width: 400px; /* Adjust the width and height according to your needs */
+  height: 400px;
   border-radius: 50%; /* This makes the border circular */
   overflow: hidden; /* This ensures the image stays within the circular border */
 }
