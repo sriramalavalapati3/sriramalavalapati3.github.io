@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(45, 11, 93), rgb(105, 92, 147), rgb(57, 16, 114));
+}
+
+
+.mainheading {
+  font-family: system-ui;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 2px var(--primary-color);
+  color: rgb(0, 0, 0);
+}
+
+
+/* <!-------------------------------------------------- NAVBAR ----------------------------------------------------> */
+.fa-bars {
+  display: none;
+}
+
+#nav-menu {
+  z-index: 7;
+  display: flex;
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  margin: auto;
+  background-color: #1a1a1ac3;
+}
+
+#nav-menu ul {
+  display: flex;
+}
+
+#nav-menu ul li {
+  padding: 10px 0;
+  list-style: none;
+}
+
+#nav-menu ul li a {
+  padding: 4px 20px 10px 20px;
+  color: rgb(189, 62, 252);
+  font-size: 1.4rem;
+  font-family: system-ui;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px var(--primary-color);
+}
+
+#nav-menu ul li a:hover {
+ box-shadow: 2px 2px 2px white;
+}
+
+.fa-sun {
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  background-color: var(--sun-color);
+  left: 0;
+  z-index: 11;
+  color: white;
+  padding: 10px;
+  font-size: 1.8rem;
+}
+
+.btn {
+  color: white;
+  background-color: white;
+  border: 2px solid rgb(102, 0, 255);
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  transition: all.4s;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: inset 200px 0 0 0 rgba(159, 169, 235, 0.956);
+  color: white;
+  cursor: pointer;
+  transform: translateX(1.5rem);
+}
+
+.fa-house,
+.fa-phone,
+.fa-rocket,
+.fa-address-card,
+.fa-file-arrow-down,
+.fa-download,
+.fa-dice-d20 {
+  color: #ff6310;
+  margin-right: 4px;
+  font-size: 1.3rem;
+}
+
+
+/* <!-------------------------------------------------- HOME ----------------------------------------------------> */
+
+#home {
+  padding-top: 12em;
+  display: flex;
+  width: 90%;
+  margin: 0 auto 5em auto;
+}
+
+.child1 {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 30px 30px 0 30px;
+}
+
+#user-details {
+  color: white;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+}
+
+.child2 {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 60px;
+}
+
+.child2 img {
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  transition: all 1s;
+}
+
+.child2 img:hover {
+  transform: translateY(-1rem);
+  box-shadow: 2px 2px 10px rgb(103, 212, 239), -2px -2px 10px rgb(50, 71, 226);
+  cursor: pointer;
+}
+
+
+.child1 h1 {
+  color: rgb(248, 240, 240);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px rgb(61, 61, 61);
+
+}
+
+.child1 h2 {
+  color: white;
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-name: para;
+}
+
+
+
+/* <!-------------------------------------------------- ABOUT ----------------------------------------------------> */
+
+.child1-a img{
+  border-radius: 10px;
+  margin-right: 40px;
+  width: 250px;
+}
+
+.child3-a {
+justify-content: space-between;
+display: flex;
+background-color: black;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+
+.child3-a div {
+color: white;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.about-section {
+  width: 100%;
+  display: flex;
+}
+#about{
+  margin: 2em 0 5em 0;
+  color: #000000;
+}
+
+#about h1{
+  color: white;
+  margin-bottom: 2em;
+  font-size: 2.2rem;
+  text-align: center;
+}
+#main h2{
+  font-size: 2rem;
+}
+#main{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+} 
+#main h1,p,h3{
+  padding: 18px 0;
+  color: white;
+}
+.child2-a{
+  display: block;
+}
+ 
+
+
+
+
+
+
+/* <!-------------------------------------------------- SKILLS ----------------------------------------------------> */
+
+
+#skills {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-card {
+  margin: 2rem;
+}
+
+.name img {
+  margin-top: -5px;
+  height: 110px;
+  object-fit: contain;
+  width: 130px;
+}
+
+
+
+
+/* <!-------------------------------------------------- PROJECTS ----------------------------------------------------> */
+
+#projects {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+  color: white;
+  border-bottom: 2px double aqua;
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.desc{
+  text-shadow: 2px 2px 2px white;
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ecf3ff3b;
+  color: rgb(0, 0, 0);
+}
+
+.project-card img {
+  width: 80%;
+  box-shadow: 2px 2px 19px rgb(255, 255, 255);
+}
+
+.project-card p a {
+  font-size: 1.6rem;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.project-tech-stack {
+  font-weight: 400;
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+.project-card div {
+  display: flex;
+  justify-content: center;
+}
+
+.project-description {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: rgb(177, 246, 255);
+}
+
+/* <!-------------------------------------------------- CONTACTS ----------------------------------------------------> */
+
+#contact {
+  width: 80%;
+  margin: 3rem auto 6rem auto;
+  display: flex;
+  
+}
+
+.contact-child-1 {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 2em;
+}
+
+.contact-child-1 .email {
+  background-color: rgb(158, 229, 255);
+  background: linear-gradient(45deg, rgb(158, 229, 255), black);
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px 20px;
+  box-shadow: 2px 2px 2px white;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.contact-child-1 .email:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px white;
+}
+
+.contact-child-1 .email .fa-paper-plane {
+  margin: 0 3px;
+}
+
+.contact-child-1 .email a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.contact-child-1 h1 {
+  text-align: center;
+  margin: 2rem auto 1.5rem auto;
+  font-weight: 400;
+  color: rgb(2, 2, 2);
+}
+
+.contact-child-1 img {
+  margin: 0rem auto 0 auto;
+  padding-bottom: 2rem;
+  display: block;
+  width: 400px;
+}
+
+#imghand {
+  width: 100px;
+  margin: 5px auto 0 auto;
+  padding: 0;
+}
+
+.contact-child-2 {
+  background: url('/image/box-squares.gif')no-repeat center center/cover;
+  object-fit: contain;
+  opacity: 1;
+  content: "";
+  z-index: 6;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: rgb(52, 15, 116);
+}
+
+.contact-child-2 form {
+  margin-top: 2rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-child-2 h1 {
+  padding-top: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-child-2 form input {
+  margin: 10px auto;
+  display: block;
+  width: 60%;
+  padding: 10px 0;
+  border-top: none;
+  border-left: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  border-right: none;
+  border-bottom: 2px solid rgb(170, 168, 168);
+}
+#resume-link-2{
+  color: black;
+  text-decoration: none;
+}
+.btns {
+  background-color: white;
+  width: 250px;
+  margin: 2rem auto 10px auto;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  transition: all .6s;
+}
+
+.btns:hover {
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  box-shadow: inset 260px 0 0 0 rgb(24, 5, 50);
+  
+}
+.lindingithub{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#contact-linkedin{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+#contact-github{
+  margin: 0 5px;
+  text-decoration: none;
+  color: rgb(26, 16, 16);
+  font-size: 1.3rem;
+}
+.emailcontact{
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+.fa-linkedin{
+  color: rgb(0, 136, 255);
+}
+#contact-phone,#contact-email{
+  font-family: system-ui;
+  margin: 5px 0;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  text-align: center;
+}
+#contact-child-2{
+  z-index: 1;
+}
+
+
+/* <!-------------------------------------------------- RESUME ----------------------------------------------------> */
+
+
+
+
+
+/* <!-------------------------------------------------- GitHUB ----------------------------------------------------> */
+
+
+
+#githubsection {
+  margin: 20px auto;
+  display: block;
+  width: 70%;
+  padding-bottom: 5em;
+}
+
+#githubsection img {
+  transition: all 0.2s;
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+}
+
+.react-activity-calendar {
+  margin-top: 5rem;
+  visibility: hidden;
+  height: 1px;
+  display: flex;
+}
+
+.react-activity-calendar img {
+  height: 1px;
+  width: 1px;
+}
