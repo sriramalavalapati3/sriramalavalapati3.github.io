@@ -256,60 +256,116 @@ margin-bottom: 10px;
 
 /* <!-------------------------------------------------- PROJECTS ----------------------------------------------------> */
 
-#projects {
-  margin: 1rem;
+#projects h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-top: 20px;
+  color: white
+}
+
+.project {
+  width:80%;
+  margin: auto;
   display: grid;
+column-gap: 20px;
+row-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
+}
+.project img{
+  object-fit: fill;
+}
+
+.project .project-card:hover {
+  cursor: pointer;
+  background: linear-gradient(to right,rgb(242, 125, 125) , rgb(92, 92, 233));
+  transform: scale(.97); 
+  color: white;
 }
 
 .project-card {
-  color: white;
-  border-bottom: 2px double aqua;
+  height: auto;
+  width:600px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #101110;
+  padding-top: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.project-card h1 {
+  font-size: 20px;
+}
+
+.project .project-card img {
   width: 90%;
-  margin: 2em auto;
+  height: 280px;
+  margin: 0px 15px;
+  border-radius: 10px;
+}
+
+.project .project-card p {
   text-align: center;
-  padding-bottom: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px 10px;
 }
 
-.desc{
-  text-shadow: 2px 2px 2px white;
-  font-size: 1.3rem;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #ecf3ff3b;
-  color: rgb(0, 0, 0);
+.project-tech-stack {
+  margin-top: 10px;
+  font-size: 20px;
 }
 
-.project-card img {
-  width: 80%;
-  box-shadow: 2px 2px 19px rgb(255, 255, 255);
+.repo-links {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin: 10px 20px;
+  ;
 }
 
-.project-card p a {
-  font-size: 1.6rem;
-  margin: 10px;
+.project-github-link {
+  display: flex;
+  width: 35%;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project-github-link a {
   text-decoration: none;
   color: white;
 }
 
-.project-tech-stack {
-  font-weight: 400;
-  margin: 10px;
-  font-size: 1.3rem;
+.project-github-link:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.523);
+
 }
 
-.project-card div {
+.project-deployed-link {
   display: flex;
+  width: 35%;
+  border: 1px solid white;
   justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
-.project-description {
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  font-size: 2rem;
-  margin: 1rem 0;
-  color: rgb(177, 246, 255);
+.project-deployed-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-deployed-link:hover {
+  cursor: pointer;
+  
+background-color: #10111088;
 }
 
 /* <!-------------------------------------------------- CONTACTS ----------------------------------------------------> */
@@ -507,4 +563,26 @@ margin-bottom: 10px;
 .react-activity-calendar img {
   height: 1px;
   width: 1px;
+}
+footer{
+  background:rgb(45, 11, 93);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white ;
+  text-align: center;
+  margin-top: 80px;
+}
+  hr{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+  } 
+  footer>p{
+    margin-bottom: 10px;
+  }               
+footer>a{
+  color: white;
+  font-size: x-large;
+  margin-right: 15px;
 }
