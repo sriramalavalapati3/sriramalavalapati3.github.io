@@ -133,6 +133,15 @@
     .contact-child-2 form {
         width: 70%;
     }
+    .project {
+        width:80%;
+        
+        margin: auto;
+        display: grid;
+      column-gap: 20px;
+      row-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+      }
 }
 
 @media (max-width:768px) {

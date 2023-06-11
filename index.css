@@ -286,7 +286,8 @@ row-gap: 10px;
 
 .project-card {
   height: auto;
-  width:600px;
+  width:100%;
+  height:700px;
   margin-top: 30px;
   margin-bottom: 40px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -304,7 +305,7 @@ row-gap: 10px;
 
 .project .project-card img {
   width: 90%;
-  height: 280px;
+  height: auto;
   margin: 0px 15px;
   border-radius: 10px;
 }
