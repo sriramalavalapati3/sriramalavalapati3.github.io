@@ -67,7 +67,7 @@
         text-align: center;
         border: 1px solid white;
         /* background-color: #000000e7; */
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.911), rgba(49, 49, 49, 0.918), rgba(0, 0, 0, 0.918));
+        background: linear-gradient(180deg, rgba(189, 130, 237, 0.911), rgba(83, 38, 173, 0.918), rgba(53, 8, 81, 0.918));
     }
 
     #nav-menu ul li a {
@@ -82,11 +82,11 @@
     }
 
     .contact-child-1 {
-        width: 90%;
+        width: 98%;
     }
 
     .contact-child-2 {
-        width: 90%;
+        width: 98%;
     }
 
     #home {
@@ -126,9 +126,7 @@
         padding: 2em;
     }
 
-    .contact-child-2 {
-        width: 90%;
-    }
+   
 
     .contact-child-2 form {
         width: 70%;
@@ -247,7 +245,7 @@
     }
 
     #contact {
-        width: 96%;
+        width: 100%;
         display: block;
     }
 }
